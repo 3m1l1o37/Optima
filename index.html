@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17112c">
+<meta name="description" content="Resuelve ejercicios de programación lineal, transporte, asignación y transbordo con procedimientos y gráficas.">
+<title>Óptima · Investigación de operaciones</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="solver.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap top-inner">
+  <a class="brand" href="#inicio" aria-label="Óptima, inicio"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-8 5 4 7-8M17 5h4v4M3 21h18"/></svg></span>óptima<span class="brand-dot">.</span></a>
+  <a class="home-link" href="#inicio">Inicio</a>
+  <div class="team"><span class="avatar" aria-hidden="true">EO</span><span><small>Integrante del equipo</small><strong>Emilio Ortiz Romo</strong></span></div>
+</div></header>
+<main id="main" class="wrap">
+  <div id="home">
+    <section class="hero">
+      <div class="hero-copy"><div class="hero-tag"><span></span> LABORATORIO DE OPTIMIZACIÓN</div><h1>Investigación<br>de <em>operaciones</em></h1><p>Resuelve ejercicios de programación lineal y de redes. Explora el procedimiento, visualiza los resultados y compara las soluciones óptimas.</p><a href="#metodos" class="button primary">Explorar métodos</a></div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 540 360" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b3a3fa" stroke-opacity=".16"/></pattern>
+            <linearGradient id="area" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop stop-color="#7e51f6" stop-opacity=".18"/><stop offset="1" stop-color="#a881ff" stop-opacity=".49"/></linearGradient>
+            <radialGradient id="glow"><stop stop-color="#7144df" stop-opacity=".30"/><stop offset="1" stop-color="#7144df" stop-opacity="0"/></radialGradient>
+            <linearGradient id="fade"><stop stop-color="#19132f" stop-opacity="0"/><stop offset="1" stop-color="#19132f"/></linearGradient>
+          </defs>
+          <ellipse cx="364" cy="180" rx="252" ry="204" fill="url(#glow)"/>
+          <rect x="54" y="20" width="470" height="314" fill="url(#grid)"/>
+          <rect x="460" width="80" height="360" fill="url(#fade)"/>
+          <path d="M102 43V295H488M102 43l-4 9m4-9 4 9m382 243-9-4m9 4-9 4" fill="none" stroke="#d1c3ff" stroke-opacity=".68"/>
+          <path d="M102 295V191L212 123l96 23 58 149Z" fill="url(#area)" stroke="#a782ff" stroke-width="2"/>
+          <path d="M65 214L331 49M151 108l322 79M267 40l117 300" fill="none" stroke="#a782ff" stroke-opacity=".55" stroke-width="1.4"/>
+          <path d="M114 278L449 50M308 146V295M102 146H308" fill="none" stroke="#6ff5d5" stroke-opacity=".72" stroke-width="1.3" stroke-dasharray="5 6"/>
+          <g fill="#d8c7ff"><circle cx="102" cy="191" r="4"/><circle cx="212" cy="123" r="4"/><circle cx="366" cy="295" r="4"/></g>
+          <circle cx="308" cy="146" r="16" fill="#66f2d3" fill-opacity=".18"/><circle cx="308" cy="146" r="6" fill="#7dfcdd"/>
+          <path d="M313 139l27-33" stroke="#7dfcdd" fill="none"/>
+          <rect x="337" y="74" width="129" height="34" rx="8" fill="#262042" stroke="#63eacd" stroke-opacity=".65"/>
+          <text x="350" y="96" fill="#9bffe8" font-size="12" font-family="monospace">PUNTO ÓPTIMO</text>
+          <g fill="#b7acd1" font-size="13" font-family="monospace"><text x="493" y="299">x₁</text><text x="95" y="32">x₂</text><text x="90" y="314">0</text></g>
+        </svg>
+      </div>
+    </section>
+    <section id="metodos" class="methods" aria-labelledby="methods-title">
+      <div class="section-head"><div><h2 id="methods-title">Elige un método</h2><p>Selecciona el tipo de ejercicio que quieres resolver.</p></div></div>
+      <div id="cards" class="cards"></div>
+    </section>
+  </div>
+  <section id="workspace" hidden></section>
+</main>
+<footer class="wrap footer"><span>Óptima · Investigación de operaciones</span><span>Emilio Ortiz Romo</span></footer>
+</body>
+</html>
